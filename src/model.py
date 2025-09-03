@@ -7,11 +7,8 @@ class MLModel:
     def train(self, X, y):
         self.model.fit(X, y)
 
-    def evaluate(self, X, y):
+    def score(self, X, y):
         return self.model.score(X, y)
-
-    def predict(self, X):
-        return self.model.predict(X)
 
 def create_model():
     return MLModel()
